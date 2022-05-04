@@ -1,0 +1,123 @@
+body, html {
+    margin: 0;
+}
+
+
+/* Login page styles */
+
+#container-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #50465bb7;
+}
+
+#login-form {
+    background-color: rgb(255, 255, 255);
+    width: 30vw;
+    height: auto;
+    padding: 30px;
+    border-radius: 3px;
+}
+
+#login-form h2 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 2em;
+    color: rgba(0, 0, 0, 0.844);
+}
+
+#login-form button {
+    color: white;
+    background-color: rgb(31, 97, 230);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: larger;
+    margin-top: 1em
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0
+}
+
+.form-input label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.756);
+    margin-bottom: 0.3em
+}
+
+.form-input input {
+    height: 2em;
+    border: 1px solid rgba(0, 0, 0, 0.364);
+    border-radius: 2px;
+    padding: 1px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+#error-message {
+    color: red
+}
+
+
+
+
+
+/* Blocked page styles */
+
+#blocked-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+    margin: auto
+}
+
+#blocked-image {
+    width: 20%;
+}
+
+#blocked-container h1 {
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Login mobile styles */
+
+    #login-form {
+        width: 80vw;
+    }
+
+
+
+    /* Blocked mobile styles */
+
+    #blocked-container {
+        width: 100vw;
+    }
+
+    #blocked-image {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 850px) and (min-width: 601px) {
+
+    /* Login mobile styles */
+
+    #login-form {
+        width: 60vw;
+    }
+
+}
